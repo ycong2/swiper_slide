@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현광펜효과 커스터마이징</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        section{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <section>    
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+        <h2>아래에서 위로 나타남</h2>
+    </div>
+    </section>
+    <section>
+    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">
+        <h2>확대되면서 나타남</h2>
+    </div>
+    </section>
+
+    <!-- 이 실행식이 있어야 돌아감 꼭 필요 -->
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
